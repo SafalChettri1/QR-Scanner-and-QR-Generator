@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QRGenerator"
+    android:background="#5C5B5B"
+    >
+
+<FrameLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/Frame"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="50dp"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/CodeView"
+        android:padding="60dp"
+        android:elevation="1dp"
+        android:gravity="center"
+        android:text="QR will appear here"
+        android:textColor="#020202"
+        android:textSize="15sp"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageCode"
+        android:layout_gravity="center"
+        android:background="@color/purple_500"/>
+</FrameLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputText"
+        android:layout_below="@id/Frame"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="50dp"
+        android:padding="10dp"
+        android:hint="Add text or link for QR"
+        android:textColorHint="#E48E8E"
+
+        android:gravity="center"
+       >
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/editData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputText"
+        android:layout_marginTop="30dp"
+
+        android:importantForAutofill="no"
+        android:inputType="textImeMultiLine"
+        android:gravity="center"
+        />
+    </com.google.android.material.textfield.TextInputLayout>
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/generateCode"
+    android:layout_below="@id/inputText"
+    android:layout_marginTop="50dp"
+    android:layout_marginStart="50dp"
+    android:layout_marginEnd="50dp"
+    android:layout_centerHorizontal="true"
+    android:text="Generate QR "
+    android:textAllCaps="true"
+    android:background="#2C602C"
+    android:backgroundTint="#2C602C"
+    />
+
+</RelativeLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#434040"
+    tools:context=".HomeActivity">
+
+    
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/scan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:id="@+id/iconimage"
+
+        />
+<!--        android:id="@+id/"-->
+
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iconimage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:padding="10dp"
+        android:text="Welcome to QR Scanner &amp; \n QR generator "
+        android:textAlignment="center"
+        android:textColor="#A3A3C8"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview1"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+<!--    <Button-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:layout_marginEnd="20dp"-->
+<!--        android:layout_below="@id/textview1"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:id="@+id/qrGenerator"-->
+<!--        android:background="@drawable/button_background"-->
+<!--        android:text="Generate QR Code"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        />-->
+<!--    <Button-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:layout_marginEnd="20dp"-->
+<!--        android:layout_below="@id/qrGenerator"-->
+<!--        android:id="@+id/qrScanner"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:text="Scan QR Code"-->
+<!--        android:background="@drawable/button_background"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:paddingBottom="10dp"-->
+<!--        android:padding="10dp"-->
+<!--        />-->
+        <Button
+            android:id="@+id/qrGenerator"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_background"
+            android:text="Generate QR\n Code"
+            android:textSize="14sp"
+            android:textAlignment="center"
+            android:shadowRadius="@integer/material_motion_duration_long_2"
+            android:backgroundTint="#615D5D"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:id="@+id/qrScanner"
+            android:textSize="14sp"
+            android:text="Scan QR \nCode"
+            android:textAlignment="center"
+            android:background="@drawable/button_background"
+            android:layout_margin="10dp"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
